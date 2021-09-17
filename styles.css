@@ -27,11 +27,11 @@ div {
 }
 .french-ripples {
   background: linear-gradient(
-    to right,
+    100deg,
     rgb(44, 0, 0) 0%,
-    transparent 15%,
+    transparent 12%,
     grey 40%,
-    transparent 56%,
+    white 56%,
     rgb(0, 0, 43) 100%
   );
   opacity: 30%;
