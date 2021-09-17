@@ -29,10 +29,10 @@ div {
   background: linear-gradient(
     to right,
     rgb(44, 0, 0) 0%,
-    transparent 20%,
+    transparent 15%,
     grey 40%,
-    transparent 60%,
-    rgb(0, 0, 43) 90%
+    transparent 56%,
+    rgb(0, 0, 43) 100%
   );
   opacity: 30%;
 }
