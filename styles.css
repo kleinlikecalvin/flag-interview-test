@@ -3,6 +3,16 @@ div {
   width: 40em;
   height: 20em;
   border: 1px solid black;
-  box-shadow: 8px 8px 8px #212121;
+  box-shadow: 8px 8px 8px hsl(0, 0%, 13%);
   background-color: white;
+}
+.日本 {
+  shape-outside: circle(20% at 50%);
+  clip-path: circle(20% at 50%);
+  background-color: red;
+  top: -0%;
+  position: absolute;
+}
+.vive-la-france {
+  background: linear-gradient(to right, red 33%, white 33% 66%, blue 66% 100%);
 }
