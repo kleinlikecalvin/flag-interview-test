@@ -5,13 +5,21 @@ div {
   box-shadow: 1px 1px 30px lightgrey;
 }
 .日本 {
-  shape-outside: circle(20% at 50%);
-  clip-path: circle(20% at 50%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.日本::before {
+  content: " ";
   background-color: red;
-  top: -0%;
+  border-radius: 50%;
+  height: 60%;
+  width: 30%;
+  mix-blend-mode: multiply;
   position: absolute;
 }
-.japan-ripples {
+.日本::after {
   background: linear-gradient(
     to right,
     grey 0%,
@@ -20,12 +28,30 @@ div {
     transparent 70%,
     grey 90%
   );
+  height: 100%;
+  content: " ";
+  width: 100%;
   opacity: 30%;
 }
 .vive-la-france {
-  background: linear-gradient(to right, red 34%, white 34% 66%, blue 66% 100%);
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
-.french-ripples {
+.vive-la-france::before {
+  content: " ";
+  background-color: red;
+  height: 100%;
+  width: 33%;
+}
+.vive-la-france::after {
+  content: " ";
+  background-color: blue;
+  height: 100%;
+  width: 33%;
+}
+.f-ripples {
   background: linear-gradient(
     100deg,
     rgb(44, 0, 0) 0%,
@@ -35,4 +61,10 @@ div {
     rgb(0, 0, 43) 100%
   );
   opacity: 30%;
+  position: absolute;
+  mix-blend-mode: multiply;
+  z-index: 1;
+  height: 100%;
+  width: 100%;
+  display: block;
 }
