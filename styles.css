@@ -11,6 +11,28 @@ div {
   top: -0%;
   position: absolute;
 }
+.japan-ripples {
+  background: linear-gradient(
+    to right,
+    grey 0%,
+    transparent 10%,
+    grey 40%,
+    transparent 70%,
+    grey 90%
+  );
+  opacity: 30%;
+}
 .vive-la-france {
   background: linear-gradient(to right, red 34%, white 34% 66%, blue 66% 100%);
+}
+.french-ripples {
+  background: linear-gradient(
+    to right,
+    rgb(44, 0, 0) 0%,
+    transparent 20%,
+    grey 40%,
+    transparent 60%,
+    rgb(0, 0, 43) 90%
+  );
+  opacity: 30%;
 }
