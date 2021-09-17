@@ -3,7 +3,6 @@ div {
   width: 40em;
   height: 20em;
   box-shadow: 1px 1px 30px lightgrey;
-  background-color: white;
 }
 .日本 {
   shape-outside: circle(20% at 50%);
